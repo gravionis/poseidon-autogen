@@ -25,3 +25,5 @@ build/
 
 # Coding folder
 coding/
+!coding/stock_chart.png
+!coding/stock_chart.py

@@ -3,11 +3,10 @@ from autogen import ConversableAgent, UserProxyAgent, AssistantAgent
 from dotenv import load_dotenv
 
 load_dotenv()
-model = "mistral:7b"
 # llm_config = {
 #     "config_list": [
 #         {
-#             "model": model,
+#             "model": "phi3:mini",
 #             "base_url": "http://localhost:11434",
 #             "api_type": "ollama",
 #         }
@@ -27,7 +26,6 @@ llm_config = {
     "temperature": 0.1,
     "max_tokens": 4048
 }
-print("Using model:", model)
 # agent = ConversableAgent(
 #     name="Mistral Agent",
 #     system_message=f"You are a helpful assistant using the {model} model.",
